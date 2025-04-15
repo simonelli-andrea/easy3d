@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="description" content="Easy3D: A Simple Yet Effective Method for 3D Interactive Segmentation">
+  <meta name="keywords" content="Easy3D, 3D Interactive Segmentation, 3D Instance Segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Easy3D: A Simple Yet Effective Method for 3D Interactive Segmentation</title>
+
+  <!-- Analytics code removed -->
+
+  <link href="./assets/css/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./assets/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="icon" href="./assets/images/teaser.jpg">
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script defer="" src="./assets/js/fontawesome.all.min.js"></script>
+  <script src="./assets/js/bulma-carousel.min.js"></script>
+  <script src="./assets/js/bulma-slider.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize the carousel with perPage: 1 to show only one slide at a time
+      bulmaCarousel.attach('#results-carousel', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: true
+      });
+    });
+  </script>
+
+  <style type="text/css">
+    .easy3d {
+      font-variant: small-caps;
+      font-weight: bold;
+      color: #2980B9;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <!-- Home button and More Research dropdown removed -->
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Easy3D: A Simple Yet Effective Method for 3D Interactive Segmentation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://simonelli-andrea.github.io/">Andrea Simonelli</a>,</span>
+            <span class="author-block">
+              <a href="https://sirwyver.github.io/">Norman Müller</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.it/citations?user=CxbDDRMAAAAJ&hl=en">Peter Kontschieder</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Meta Reality Labs Zurich</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link (disabled) -->
+              <span class="link-block">
+                <a class="external-link button is-normal is-rounded is-dark" disabled>
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="./assets/images/teaser.jpg" alt="Easy3D Teaser" width="70%">
+      <h2 class="subtitle has-text-centered">
+        <span class="easy3d">Easy3D</span> enables interactive 3D instance segmentation with just a few clicks, allowing users to select and manipulate objects in 3D environments.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The increasing availability of digital 3D environments, whether through image-based 3D reconstruction, generation, or scans obtained by robots, is driving innovation across various applications. These come with a significant demand for 3D interaction, such as 3D Interactive Segmentation, which is useful for tasks like object selection and manipulation.
+          </p>
+          <p>
+            Additionally, there is a persistent need for solutions that are efficient, precise, and performing well across diverse settings, particularly in unseen environments and with unfamiliar objects. In this work, we introduce a 3D interactive segmentation method that consistently surpasses previous state-of-the-art techniques on both in-domain and out-of-domain datasets.
+          </p>
+          <p>
+            Our simple approach integrates a voxel-based sparse encoder with a lightweight transformer-based decoder that implements implicit click fusion, achieving superior performance and maximizing efficiency. Our method demonstrates substantial improvements on benchmark datasets, including ScanNet, ScanNet++, S3DIS, and KITTI-360, and also on unseen geometric distributions such as the ones obtained by Gaussian Splatting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Abstract. -->
+
+<!-- Paper video. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <p class="has-text-centered mb-4">
+          This video showcases a VR application featuring Easy3D, where a user can define 3D clicks to segment objects (blue masks), move them and re-arrange them as well as make them explode.
+        </p>
+        <div class="publication-video" style="width: 100%; height: 100%; max-width: 800px; margin: 0 auto;">
+          <div class="has-ratio" style="position: relative; padding-top: 100%; /* 1:1 Aspect Ratio (Square) */">
+            <iframe id="youtube-player"
+                    src="https://www.youtube.com/embed/xvKfmxuCiJ8?autoplay=1&mute=1&vq=hd720&enablejsapi=1"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <script>
+            // Load the YouTube API script
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            // Create YouTube player after API loads
+            var player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('youtube-player', {
+                events: {
+                  'onReady': onPlayerReady
+                }
+              });
+            }
+
+            // Set playback rate when player is ready
+            function onPlayerReady(event) {
+              event.target.setPlaybackRate(1.25);
+              event.target.playVideo();
+            }
+          </script>
+        </div>
+        <p class="has-text-centered mt-4">
+          This demonstrates a real application of our method, which fits seamlessly in a state-of-the-art Gaussian Splatting rendering pipeline.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Paper video. -->
+<section class="hero is-light is-small" style="margin-top: -400px;">
+  <div class="hero-body">
+    <div class="container" style="width: 70%; margin: 0 auto;">
+      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+      <p class="has-text-centered mb-4">
+        Below we visualize the predictions of our method compared to previous approaches for up to 3 user clicks, showing the IoU between the the ground-truth object mask (green) and the predicted mask (red). Easy3D demonstrates superior generalization performance, especially on challenging domains like KITTI-360.
+      </p>
+      <div id="results-carousel" class="carousel results-carousel" style="background-color: white; padding: 20px; border-radius: 10px;">
+        <div class="item">
+          <img src="./assets/images/78.jpg" alt="Easy3D Results 1" style="width: 70%; margin: 0 auto; display: block;">
+        </div>
+        <div class="item">
+          <img src="./assets/images/79.jpg" alt="Easy3D Results 2" style="width: 70%; margin: 0 auto; display: block;">
+        </div>
+        <div class="item">
+          <img src="./assets/images/80.jpg" alt="Easy3D Results 3" style="width: 70%; margin: 0 auto; display: block;">
+        </div>
+        <div class="item">
+          <img src="./assets/images/81.jpg" alt="Easy3D Results 4" style="width: 70%; margin: 0 auto; display: block;">
+        </div>
+        <div class="item">
+          <img src="./assets/images/82.jpg" alt="Easy3D Results 5" style="width: 70%; margin: 0 auto; display: block;">
+        </div>
+        <div class="item">
+          <img src="./assets/images/83.jpg" alt="Easy3D Results 6" style="width: 70%; margin: 0 auto; display: block;">
+        </div>
+        <div class="item">
+          <img src="./assets/images/84.jpg" alt="Easy3D Results 7" style="width: 70%; margin: 0 auto; display: block;">
+        </div>
+        <div class="item">
+          <img src="./assets/images/85.jpg" alt="Easy3D Results 8" style="width: 70%; margin: 0 auto; display: block;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{simonelli2025easy3d,
+  author    = {Simonelli, Andrea and M{\"u}ller, Norman and Kontschieder, Peter},
+  title     = {Easy3D: A Simple Yet Effective Method for 3D Interactive Segmentation},
+  journal   = {arXiv},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="#">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/meta-research" disabled="">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is borrowed from the nice <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
